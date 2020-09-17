@@ -1,0 +1,26 @@
+{
+  "name": "notes-challenge-2",
+  "version": "1.0.0",
+  "description": "Week 7 of Makers",
+  "main": "testing-framework.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djura22/notes_app_challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Djura22/notes_app_challenge/issues"
+  },
+  "homepage": "https://github.com/Djura22/notes_app_challenge#readme",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "jasmine-node": "^3.0.0"
+  }
+}
