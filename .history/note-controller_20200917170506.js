@@ -1,16 +1,17 @@
-'use strict';
+'use strict'
 
 // document.getElementById("app").innerHTML = "howdy";
 
 class NoteController {
 
   constructor(notelist) {
-    this.newNote = new Note('Favourite drink: seltzer').getNote();
+    var newNote = new Note('Favourite drink: seltzer')
     this.notelist = notelist
-    this.notelist.createNote(this.newNote)
-    this.noteView = new NoteListView(this.notelist.getNotes());
-
+    this.notelist.createNote(newNote.getNote())
+    console.log(this.notelist)
+    this.noteView = new NoteListView(this.notelist)
   };
+
 
 };
 

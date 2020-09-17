@@ -19,7 +19,7 @@
   test.that('it instantiates with a new note list view, passing in the stored list', function() {
     var notelist = new NoteList()
     var controller = new NoteController(notelist)
-    expect.toEqual(controller.noteView.noteList, controller.noteView.noteList);
+    expect.toEqual(controller.noteView.noteList, controller.notelist);
 
   });
 

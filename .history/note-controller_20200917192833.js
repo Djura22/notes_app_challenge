@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 // document.getElementById("app").innerHTML = "howdy";
 
@@ -9,8 +9,8 @@ class NoteController {
     this.notelist = notelist
     this.notelist.createNote(this.newNote)
     this.noteView = new NoteListView(this.notelist.getNotes());
-
   };
+
 
 };
 

@@ -12,14 +12,14 @@
   test.that('it instantiates with a new note - Favourite drink: seltzer', function() {
     var noteList = new NoteList()
     var controller = new NoteController(noteList)
-    expect.toEqual(controller.newNote, "Favourite drink: seltzer")
+    expect.toEqual(controller.note, "Favourite drink: seltzer")
 
   });
 
   test.that('it instantiates with a new note list view, passing in the stored list', function() {
-    var notelist = new NoteList()
-    var controller = new NoteController(notelist)
-    expect.toEqual(controller.noteView.noteList, controller.noteView.noteList);
+    var noteList = new NoteList()
+    var controller = new NoteController(noteList)
+    expect.toEqual(controller.listView.noteList, noteList);
 
   });
 
