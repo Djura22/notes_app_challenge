@@ -12,7 +12,7 @@
   test.that('it returns a string of HTML back with 1 note', function() {
     var note = new Note("Into my heart an air that kills");
     var sglNoteView = new SingleNoteView(note);
-    expect.toEqual(sglNoteView.getHTML(),"<ul><li>Into my heart an air that kills</li></ul>");
+    expect.toEqual(noteListView.getHTML(),"<ul><li>Into my heart an air that kills</li></ul>");
   });
 
 

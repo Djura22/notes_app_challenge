@@ -10,7 +10,8 @@ class SingleNoteView {
   getHTML() {
     var htmlStart = "<ul><li>"
     let note = this.note
-    var htmlString = htmlStart + note.getNote();
+
+    var htmlString = htmlStart + note.getNote('</li><li>')
     return htmlString + "</li></ul>"
   }
 
