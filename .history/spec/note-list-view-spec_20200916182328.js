@@ -25,7 +25,7 @@
     var noteList = new NoteList();
     noteList.createNote('Hello this is a long note right here');
     var noteListView = new NoteListView(noteList);
-    expect.toEqual(noteListView.getHTML(),"<ul><li>Hello this is a long note right here</li></ul>");
+    expect.toEqual(noteListView.getHTML(),"<ul><li>Hello this is a long</li></ul>");
   });
 
 

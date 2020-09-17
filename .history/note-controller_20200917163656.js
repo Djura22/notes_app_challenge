@@ -3,7 +3,6 @@
 // document.getElementById("app").innerHTML = "howdy";
 
 class NoteController {
-  
   constructor(noteList) {
     this.notelist = noteList
 
