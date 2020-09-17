@@ -6,7 +6,7 @@ class NoteController {
 
   constructor(noteList) {
     this.notelist = noteList
-    this.note = new Note('Favourite drink: seltzer').getNote();
+    this.note = new Note('Favourite drink: seltzer')
 
   };
 
