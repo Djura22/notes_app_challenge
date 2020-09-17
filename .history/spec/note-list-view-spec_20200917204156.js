@@ -3,9 +3,10 @@
   test.that('it can store a note list in an instance of it', function() {
     var noteList = new NoteList()
     var view = new NoteListView(noteList)
-    expect.toEqual(noteList.getNotes(), view.noteList)
+    expect.toEqual(noteList, view.notelist)
 
   });
+
 
   test.that('can get a string of HTML back with 0 objects', function() {
     var noteList = new NoteList();

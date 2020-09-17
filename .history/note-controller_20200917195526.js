@@ -5,10 +5,10 @@
 class NoteController {
 
   constructor(notelist) {
-    this.newNote = new Note('Favourite drink: seltzer')
+    this.newNote = new Note('Favourite drink: seltzer').getNote();
     this.notelist = notelist
-    this.notelist.createNote(this.newNote.getNote())
-    this.noteView = new NoteListView(this.notelist);
+    this.notelist.createNote(this.newNote)
+    this.noteView = new NoteListView(this.notelist.getNotes());
 
   };
 
@@ -16,11 +16,8 @@ class NoteController {
     document.getElementById("app").innerHTML = this.noteView.getHTML();
   };
 
-};
 
-var noteL = new NoteList();
-var controller = new NoteController(noteL);
-controller.sendHtml();
+};
 
 // var noteList = new NoteList()
 // var controller = new NoteController(noteList)

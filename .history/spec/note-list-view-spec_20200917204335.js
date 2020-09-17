@@ -7,6 +7,7 @@
 
   });
 
+
   test.that('can get a string of HTML back with 0 objects', function() {
     var noteList = new NoteList();
     var listView = new NoteListView(noteList);

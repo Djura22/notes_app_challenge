@@ -13,7 +13,7 @@ class NoteController {
   };
 
   sendHtml() {
-    document.getElementById("app").innerHTML = this.noteView.getHTML();
+    document.getElementById("app") = this.noteView.getHTML();
   };
 
 };
