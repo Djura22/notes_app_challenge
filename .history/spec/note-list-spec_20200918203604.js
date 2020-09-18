@@ -22,10 +22,7 @@
   test.that('assigns an ID to a note as it enters a list', function() {
     var noteList = new NoteList();
     noteList.createNote('Test Note 1');
-    noteList.createNote('Test Note 2');
-    expect.toEqual(noteList.getNotes()[0].id, 0 )
-    expect.toEqual(noteList.getNotes()[1].id, 1 )
-
+    
 
   })
 

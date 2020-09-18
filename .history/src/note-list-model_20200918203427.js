@@ -9,7 +9,6 @@ class NoteList {
 
   createNote(text) {
     this.notes.push(new Note(text, this.sign));
-    this.sign++;
   }
 
   getNotes() {
